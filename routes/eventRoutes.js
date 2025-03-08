@@ -13,6 +13,7 @@ export const eventRoutes = Router();
 eventRoutes.post("/events", createEvent);
 eventRoutes.get("/events", getAllEvents);
 eventRoutes.put("/events/:id", updateEvent);
+eventRoutes.patch("/events/:id", updateEvent);
 eventRoutes.delete("/events/:id", deleteEvent);
 
 export default eventRoutes;

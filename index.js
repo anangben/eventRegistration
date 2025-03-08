@@ -2,8 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import eventRoutes from "./routes/eventRoutes.js";
 
-// MongoDB connection URI
 
+// Create an express app
 const app = express();
 // Middleware to parse JSON
 app.use(express.json());
