@@ -12,6 +12,14 @@ app.use("/api/v1", eventRoutes);
 
 // MongoDB connection URI
 const mongoURI = process.env.MONGO_URI;
+mongoose
+  .connect(mongoURI)
+  .then(() => {
+    console.log("database connected");
+  })
+  .catch((err) => {
+    console, log(err);
+  });
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
