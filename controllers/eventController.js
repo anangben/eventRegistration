@@ -16,7 +16,7 @@ export const getAllEvents = async (req, res, next) => {
     res.status(200).json(event);
   } catch (error) {
     next(error);
-  }
+  } 
 };
 
 export const updateEvent = async (req, res, next) => {
